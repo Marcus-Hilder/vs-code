@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bellca.css">
+</head>
+<body style="background-color:white;">
+
+<div class="navbar">
+  <a href="#home">Personal</a>
+ 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Business
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Small</a>
+    <a href="#">Medium</a>
+    <a href="#">Large</a>
+  </div>
+  </div>
+  <a href="#Find a Store" class="split">on|fr</a>
+  <a href="#accesablity" class="split">accesablity</a>
+  <div class="dropdown1">
+    <button class="dropbtn1" onclick="myFunction1()">find a store
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content1" id="myDropdown1">
+      <a href="#">find a store</a>
+      <a href="#">book an appontment</a>
+      
+    </div>
+    </div> 
+
+  <a href="#">Bell for Better</a>
+
+</div>
+<div class="navbar1">
+  <a href="#" style="font-size: 30px;">Bell</a>
+  <a href="#"style="padding: -100px;">mobilty</a>
+  <a href="#">internet</a>
+  <a href="#">tv</a>
+</div>
+
+ 
+  
+
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+
+
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn1')) {
+  var myDropdown = document.getElementById("myDropdown1");
+    if (myDropdown.classList.contains('show1')) {
+      myDropdown.classList.remove('show1');
+    }
+  }
+}
+</script>
+</body>
+</html>
